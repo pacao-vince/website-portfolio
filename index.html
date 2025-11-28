@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+		<title>Home</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body class="font-mono bg-[#2E3436] text-[#C0C0C0]">
+		<!-- Navigation Bar -->
+		<header>
+			<nav class="fixed flex justify-center w-full text-[#C0C0C0] p-2 bg-[]">
+				<h1 class="text-xl font-bold"></h1>
+				<div class="flex gap-x-6 text-lg mx-6">
+					<a href="index.html" class="border-b-2 border-transparent hover:border-blue-500">HOME</a>
+					<a href="about_us.html" class="border-b-2 border-transparent hover:border-blue-500">ABOUT</a>
+					<a href="gallery.html" class="border-b-2 border-transparent hover:border-blue-500">PORTFOLIO</a>
+					<a href="#" class="border-b-2 border-transparent hover:border-blue-500">BLOG</a>
+					<a href="contact_us.html" class="border-b-2 border-transparent hover:border-blue-500">CONTACT</a>
+				</div>
+			</nav>
+		</header>
+
+		<main
+			class="flex h-screen text-[#C0C0C0] items-center justify-center sm:px-12 lg:px-20"
+		>
+			<!-- Text Section -->
+			<div class="w-1/2 px-12">
+				<h3 class="text-5xl font-light text-left">Hi, I'm</h3>
+
+				<h1 class="text-6xl font-bold text-left">Vince</h1>
+
+				<h2 class="text-3xl font-medium text-left text-yellow-500">
+					a Web Developer
+				</h2>
+
+				<p class="text-lg text-left leading-7 mb-3">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+					quo magnam facere tempore illum, voluptatum quam aspernatur vero,
+					voluptatibus eum reprehenderit omnis dolorem, obcaecati reiciendis?
+					Nam voluptatibus similique a libero.
+				</p>
+
+				<p class="text-lg text-[#C0C0C0]">
+					<a href="#" class="bg-blue-500 px-4 py-2 rounded font-semibold">
+						<i class="fa-solid fa-circle-down"></i>
+						Download CV
+					</a>
+				</p>
+			</div>
+
+			<!-- Image Section -->
+			<div class="w-1/2 px-4 flex justify-center">
+				<img
+					class="w-120 h-120 rounded-full object-cover border-4 border-[#000000]"
+					src="wojak.jpg"
+					alt="wojak"
+				/>
+			</div>
+		</main>
+	</body>
+</html>

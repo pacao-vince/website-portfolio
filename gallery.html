@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="icon" href="data:," />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+	</head>
+
+	<body class="font-mono bg-[#2E3436] text-[#C0C0C0]">
+		<!-- Navigation Bar -->
+		<header>
+			<nav class="fixed flex justify-center w-full p-2">
+				<h1 class="text-xl font-bold"></h1>
+				<div class="flex gap-x-6 text-lg mx-6">
+					<a href="index.html" class="border-b-2 border-transparent hover:border-blue-500">HOME</a>
+					<a href="about_us.html" class="border-b-2 border-transparent hover:border-blue-500">ABOUT</a>
+					<a href="gallery.html" class="border-b-2 border-transparent hover:border-blue-500">PORTFOLIO</a>
+					<a href="#" class="border-b-2 border-transparent hover:border-blue-500">BLOG</a>
+					<a href="contact_us.html" class="border-b-2 border-transparent hover:border-blue-500">CONTACT</a>
+				</div>
+			</nav>
+		</header>
+
+		<main class="max-w-8xl mx-auto py-12">
+			<h1 class="flex text-4xl justify-center font-bold mb-6">Portfolio</h1>
+
+			<div class="flex flex-wrap justify-center gap-6">
+				<!-- Item 1 -->
+				<div
+					class="flex flex-col items-center w-[360px] p-4 rounded-lg border-2 border-[#C0C0C0]"
+				>
+					<div class="content-center">
+						<a target="_blank" href="Screenshot 2025-10-15 180243.png">
+							<img
+								src="Screenshot 2025-10-15 180243.png"
+								alt="portrait"
+								class="w-full"
+							/>
+						</a>
+					</div>
+					<!-- <span>
+						<a href="#"> <i class="fa-brands fa-github text-xl"></i></a>
+						<a href="#"><i class="fa-solid fa-link"></i></a>
+					</span> -->
+					<p class="text-2xl font-semibold self-start text-yellow-500 mt-2">
+						POS System/
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum, quidem, ab omnis id perspiciatis a eveniet voluptates totam, sint vitae blanditiis quod suscipit ducimus praesentium adipisci. Voluptatem, quia asperiores.
+					</p>
+
+					
+					<button id="description"
+						type="button"
+						class="flex self-start px-[8px] py-[5px] rounded border-2 border-blue-500 hover:border-blue-700 mt-2 gap-x-2"
+					>
+						GitHub Repo
+						<i class="fa-solid fa-arrow-up-right-from-square self-center"></i>
+					</button>
+					</p>
+
+					<dialog id="dialog" class="absolute bg-white border shadow p-4 rounded">
+						<div class="flex justify-end">
+							<form method="dialog">
+								<button class="place-self-end">&times;</button>
+							</form>
+						</div>
+
+						<p>
+							This is the popover content.
+						</p>
+					</dialog>
+				</div>
+
+				<!-- Item 2 -->
+				<div
+					class="flex flex-col items-center w-[360px] p-4 rounded-lg border-2 border-[#C0C0C0]"
+				>
+					<div class="content-center">
+						<a target="_blank" href="Screenshot (108).png">
+							<img src="Screenshot (108).png" alt="portrait" class="w-full" />
+						</a>
+					</div>
+
+					<p class="text-2xl font-semibold self-start text-yellow-500 mt-2">
+						CRUD App/
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum, quidem, ab omnis id perspiciatis a eveniet voluptates totam, sint vitae blanditiis quod suscipit ducimus praesentium adipisci. Voluptatem, quia asperiores.
+					</p>
+					<button id="description"
+						type="button"
+						class="flex self-start px-[8px] py-[5px] rounded border-2 border-blue-500 hover:border-blue-700 mt-2 gap-x-2"
+					>
+						GitHub Repo
+						<i class="fa-solid fa-arrow-up-right-from-square self-center"></i>
+					</button>
+				</div>
+
+				<!-- Item 3 -->
+				<div
+					class="flex flex-col items-center w-[360px] p-4 rounded-lg border-2 border-[#C0C0C0]"
+				>
+					<div class="content-center">
+						<a target="_blank" href="Screenshot 2025-10-15 183922.png">
+							<img
+								src="Screenshot 2025-10-15 183922.png"
+								alt="Description"
+								class="w-full border"
+							/>
+						</a>
+					</div>
+
+					<p class="text-2xl font-semibold self-start text-yellow-500  mt-2">
+						Website Portfolio/
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum, quidem, ab omnis id perspiciatis a eveniet voluptates totam, sint vitae blanditiis quod suscipit ducimus praesentium adipisci. Voluptatem, quia asperiores.
+					</p>
+					<button id="description"
+						type="button"
+						class="flex self-start px-[8px] py-[5px] rounded border-2 border-blue-500 hover:border-blue-700 mt-2 gap-x-2"
+					>
+						GitHub Repo
+						<i class="fa-solid fa-arrow-up-right-from-square self-center"></i>
+					</button>
+				</div>
+			</div>
+
+
+			<!-- <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
+		<button onclick="fetchData()">Fetch Pokemon</button>
+		<br>
+		<img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+
+		<script src="main.js"></script> -->
+		</main>
+		<script>
+			const dialog = document.getElementById('dialog');
+			const description = document.getElementById('description');
+
+			description.addEventListener("click", () => {
+				dialog.showModal();
+			});
+		</script>
+	</body>
+</html>
