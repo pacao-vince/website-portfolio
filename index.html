@@ -8,23 +8,15 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 		/>
 		<title>Home</title>
-
-		<link rel="stylesheet" href="style.css" />
+		<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 	</head>
 
 	<body class="font-mono bg-[#2E3436] text-[#C0C0C0]">
 		<!-- Navigation Bar -->
 		<header>
-			<nav class="fixed flex justify-center w-full text-[#C0C0C0] p-2 bg-[]">
-				<h1 class="text-xl font-bold"></h1>
-				<div class="flex gap-x-6 text-lg mx-6">
-					<a href="index.html" class="border-b-2 border-transparent hover:border-blue-500">HOME</a>
-					<a href="about_us.html" class="border-b-2 border-transparent hover:border-blue-500">ABOUT</a>
-					<a href="gallery.html" class="border-b-2 border-transparent hover:border-blue-500">PORTFOLIO</a>
-					<a href="#" class="border-b-2 border-transparent hover:border-blue-500">BLOG</a>
-					<a href="contact_us.html" class="border-b-2 border-transparent hover:border-blue-500">CONTACT</a>
-				</div>
-			</nav>
+			<div id="navbar"></div>
 		</header>
 
 		<main
@@ -63,6 +55,11 @@
 					alt="wojak"
 				/>
 			</div>
+
+			
 		</main>
+	
+		<script type="text/babel" src="./Navbar.jsx"></script>
+	
 	</body>
 </html>

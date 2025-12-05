@@ -5,26 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>About</title>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 	</head>
 
 	<body class="bg-[#2E3436] font-mono scroll-smooth">
 		<!-- Navigation Bar -->
 		<header>
-			<nav class="fixed flex justify-center w-full text-[#C0C0C0] p-2">
-				<div class="flex gap-x-6 text-lg mx-6">
-					<a href="index.html" class="border-b-2 border-transparent hover:border-blue-500">HOME</a>
-					<a href="about_us.html" class="border-b-2 border-transparent hover:border-blue-500">ABOUT</a>
-					<a href="gallery.html" class="border-b-2 border-transparent hover:border-blue-500">PORTFOLIO</a>
-					<a href="#" class="border-b-2 border-transparent hover:border-blue-500">BLOG</a>
-					<a href="contact_us.html" class="border-b-2 border-transparent hover:border-blue-500">CONTACT</a>
-				</div>
-			</nav>
+			<div id="navbar"></div>
 		</header>
 
 		<!-- About Section -->
-		<main class="max-w-6xl mx-auto px-6 py-12 text-[#C0C0C0]">
+		<main class="max-w-6xl mx-auto px-6 pt-12 text-[#C0C0C0]">
 			<section class="min-h-screen py-4">
-				<h1 class="text-4xl font-bold mb-12">About Me</h1>
+				<h1 class="text-4xl font-bold mb-6">About Me</h1>
 				<p class="text-lg leading-relaxed">
 					I'm Vince—a detail-oriented web developer with a passion for clean
 					code, efficient workflows, and continuous learning. I thrive in remote
@@ -136,5 +131,7 @@
 				</div>
 			</section>
 		</main>
+		
+		<script type="text/babel" src="./Navbar.jsx"></script>
 	</body>
 </html>
