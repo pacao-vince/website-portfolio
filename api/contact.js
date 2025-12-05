@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import ContactEmail from "../emails/ContactEmail"; // React Email template
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(re_f3ZJ7Zyp_3hmkSRDpUJNmUikLUkrDuPkf);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     try {
       const data = await resend.emails.send({
         from: "onboarding@resend.dev",
-        to: "pacao.vince10@gmail.com",
+        to: "vpacao.pbox@parsu.edu.ph",
         subject: `New message from ${name}`,
         reply_to: email,
         react: <ContactEmail name={name} email={email} message={message} />,
