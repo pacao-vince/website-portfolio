@@ -83,16 +83,16 @@
           email: e.target.email.value,
           message: e.target.message.value,
         };
-       await fetch("http://localhost:3001/messages", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-        });
-    //      await fetch("/api/contact", {
+    //    await fetch("http://localhost:3001/messages", {
     //     method: "POST",
     //     headers: { "Content-Type": "application/json" },
     //     body: JSON.stringify(formData),
-    //   });
+    //     });
+         await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
       alert("Message sent!");
 
       };
