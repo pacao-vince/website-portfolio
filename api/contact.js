@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import ContactEmail from "../emails/ContactEmail"; // React Email template
 
-const resend = new Resend(re_f3ZJ7Zyp_3hmkSRDpUJNmUikLUkrDuPkf);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
